@@ -1,0 +1,88 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Roboto, sans-serif;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    background-color: #85A5D4;
+}
+
+.content > .columns {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    background-color: #FFF;
+    height: 500px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.content > .columns > .column-wrapper {
+    float: left;
+    width: 33.333%; ;
+    margin-top: 70px;
+    transition: 0.4s;
+}
+
+.content > .columns > .column-wrapper:hover {
+    background-color: #F6F6F6;
+    border-radius: 5px;
+}
+
+.columns > .column-wrapper:last-child {
+    float: right;
+}
+
+.column-wrapper > .column {
+    width: 65%;
+    margin: auto;
+}
+
+.column-wrapper > .column > img {
+    width: 100px;
+}
+
+.column p.description {
+    line-height: 25px;
+    color: #A9A9A9;
+}
+
+.column h2 {
+    color: #6D5FAD;
+    letter-spacing: 4px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.column .currency {
+    color: #6D5FAD;
+}
+
+.currency > .number {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.currency > sup {
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.columns button.btn-feedback {
+    margin-top: 15px;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: #295AFF;
+    color: white;
+    cursor: pointer;
+}
