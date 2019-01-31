@@ -27,7 +27,7 @@ html, body {
 
 .content > .columns > .column-wrapper {
     float: left;
-    width: 33.333%; ;
+    width: 33.333%;
     margin-top: 70px;
     transition: 0.4s;
 }
@@ -46,7 +46,7 @@ html, body {
     margin: auto;
 }
 
-.column-wrapper > .column > img {
+.column-wrapper > .column > .device {
     width: 100px;
 }
 
@@ -85,6 +85,120 @@ html, body {
 }
 
 .columns button.btn-feedback {
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: #295AFF;
+    color: white;
+    cursor: pointer;
+}
+
+/* Media queries */
+@media(max-width: 1890px) {
+    .content > .columns > .column-wrapper {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width: 1490px) {
+    .content > .columns > .column-wrapper {
+        margin-top: 40px;
+    }
+    .column-wrapper > .column {
+        width: 75%;
+    }
+}
+
+@media(max-width: 1280px) {
+    .content > .columns > .column-wrapper {
+        margin-top: 30px;
+    }
+    .column-wrapper > .column {
+        width: 85%;
+    }
+}
+
+@media(max-width: 955px) {
+    .content > .columns > .column-wrapper {
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 835px) {
+    .content > .columns {
+        overflow: auto;
+        height: 700px;
+    }
+    .content > .columns > .column-wrapper {
+        float: none;
+        width: 100%;
+        overflow: auto;
+    }
+    .columns > .btn-wrapper {
+        position: relative;
+        bottom: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Modal window*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    text-align: center;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.modal-content .device {
+    width: 100px;
+}
+
+.modal-content h2 {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.confirmation {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.close {
+    width: 15px;
+    float: right;
+}
+
+.close:hover,
+.close:focus {
+    cursor: pointer;
+}
+
+.modal-content .btn-wrapper-modal {
+    text-align: center;
+}
+
+.modal-content button.btn-feedback {
     width: 150px;
     height: 35px;
     border-radius: 5px;

@@ -13,7 +13,7 @@
     <div class="columns">
       <div class="column-wrapper">
         <div class="column mobile">
-          <img src="img/device.svg">
+          <img class="device" src="img/device.svg" alt="mobile">
           <h2>MOBILE</h2>
           <p class="description">
             Get notifications about new releases in our mobile app.
@@ -23,7 +23,7 @@
       </div>
       <div class="column-wrapper">
         <div class="column desktop">
-          <img src="img/laptop.svg">
+          <img class="device" src="img/laptop.svg" alt="desktop">
           <h2>DESKTOP</h2>
           <p class="description">
             Enjoy new episodes on your laptop in browser with our web service, which supports all the platforms.
@@ -33,7 +33,7 @@
       </div>
       <div class="column-wrapper">
         <div class="column tv">
-          <img src="img/monitor.svg">
+          <img class="device" src="img/monitor.svg" alt="tv">
           <h2>TV</h2>
           <p class="description">
             Watch your favorite series at home on large screen with our TV application.
@@ -43,6 +43,17 @@
       </div>
       <div class="btn-wrapper">
         <button class="btn-feedback">Give feedback</button>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal Window -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="confirmation">Confirmation</span>
+      <img class="close" src="img/cross.svg" alt="close">
+      <div class="btn-wrapper-modal">
+        <button class="btn-feedback">Confirm and pay</button>
       </div>
     </div>
   </div>
