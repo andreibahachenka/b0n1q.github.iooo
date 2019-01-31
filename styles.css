@@ -143,6 +143,35 @@ html, body {
     }
 }
 
+@media(max-width: 715px) {
+    .modal-content h2 {
+        font-size: 15px;
+    }
+    .modal-content .confirmation {
+        font-size: 12px;
+    }
+    .modal-content .device {
+        width: 50px;
+    }
+    .modal-content .number {
+        font-size: 20px;
+    }
+    .modal-content sup {
+        font-size: 11px;
+    }
+    .close {
+        width: 10px;
+        float: right;
+    }
+    .modal-content .description {
+        font-size: 12px;
+    }
+    .modal-content .btn-feedback {
+        width: 100px !important;
+        height: 40px !important;
+    }
+}
+
 /* Modal window*/
 .modal {
     display: none;
