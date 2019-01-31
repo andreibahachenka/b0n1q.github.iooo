@@ -160,7 +160,7 @@ html, body {
         font-size: 11px;
     }
     .close {
-        width: 10px !important;
+        width: 10px;
         float: right;
     }
     .modal-content .description {
